@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Poem Generator</title>
+    <style>
+        body { font-family: Georgia, serif; background: #f0f0f0; padding: 40px; }
+        h1 { color: #333; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        .poem { background: white; padding: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>✨ AI Poem Generator</h1>
+    <form method="post">
+        <label>Enter a topic:</label>
+        <input type="text" name="topic" placeholder="Love, stars, coffee..." required>
+        <button type="submit">Create Poem</button>
+    </form>
+
+    {% if poem %}
+    <div class="poem">
+        <h2>Your Poem:</h2>
+        <p>{{ poem | safe }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
