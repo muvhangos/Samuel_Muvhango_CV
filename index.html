@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Poem Generator</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Welcome to my AI poem generator</h1>
+        </header>
+        <main>
+            <div class="form-container">
+                <form id="form-gen">
+                    <input type="text" class="poem-input" id="user-instruction" placeholder="Enter the topic of the poem">
+                    <input type="submit" class="submit-button">
+                </form>
+                <small class="hint">i.e food, music or flowers</small>
+            </div>
+                <div class="poem hidden" id="poem">
+                </div>
+           
+        </main>
+        <footer>
+            This AI project was coded by
+            <a href="https://github.com/samuel muvhango" target="_blank">Samuel Muvhango</a>
+            and is
+            <a href="https://github.com/muvhangos/AI/poem-generator" target="_blank">open-sourced on GitHub</a>
+            and is
+            <a href="https://muvhangos.netlify.app/">hosted on netflify</a>
+        </footer>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
