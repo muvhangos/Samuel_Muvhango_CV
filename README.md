@@ -1,2 +1,2 @@
-# AI-poem-generator
+# Samuel Muvhango CV
 Programming
